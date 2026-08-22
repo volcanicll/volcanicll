@@ -1,158 +1,64 @@
-<div align="center">
-
-<!-- Header -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=venom&color=0:1f6feb,50:a371f7,100:f778ba&height=180&section=header&text=volcanic&fontSize=48&fontColor=e6edf3&fontAlignY=32&desc=vibe%20coding%20%C2%B7%20ship%20first&descSize=18&descAlignY=52&animation=blinking" />
-
-<!-- Typing SVG -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=58A6FF&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=%F0%9F%92%BB+Full-Stack+Developer;%E2%9A%A1+TypeScript+%7C+React+%7C+Node.js;%F0%9F%AA%99+Crypto+%26+AI+Enthusiast;%F0%9F%9B%A0%EF%B8%8F+Building+tools+that+matter" alt="Typing SVG" />
-</a>
-
-<!-- Social Badges -->
-<br/>
-<br/>
-
-[![GitHub followers](https://img.shields.io/github/followers/volcanicll?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22&color=238636)](https://github.com/volcanicll?tab=followers)
-[![GitHub stars](https://img.shields.io/github/stars/volcanicll?affiliations=OWNER&style=for-the-badge&logo=github&logoColor=white&labelColor=161b22&color=e3b341)](https://github.com/volcanicll?tab=repositories)
-
-</div>
-
----
-
-### 🧑‍💻 About Me
-
-```typescript
-const volcanic = {
-  pronouns: "he/him",
-  askMeAbout: ["ai toolchains", "crypto", "devtools", "automation"],
-  technologies: {
-    frontEnd: { js: ["React", "Next.js"], ts: true, html: true, css: true },
-    backEnd: { node: true, python: true, bun: true, rust: true },
-    misc: ["Obsidian Plugin", "VS Code Extension", "Electron", "Telegram Bot"]
-  },
-  currentFocus: "AI-powered developer & trading tools",
-  funFact: "56 repos and counting"
-};
-```
-
----
-
-### 🛠 Tech Stack
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=typescript,javascript,rust,python,dart,react,nextjs,nodejs,bun,electron,tailwind,flutter,bash,git,github,vscode,obsidian&perline=9&theme=dark" />
-
-</div>
-
----
-
-### 📊 GitHub Stats
-
-<div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=volcanicll&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=238636&text_color=c9d1d9&ring_color=58a6ff" />
-  <img height="170" src="https://github-readme-streak-stats.herokuapp.com?user=volcanicll&theme=github-dark-blue&hide_border=true&background=0D1117&ring=58A6FF&fire=238636&currStreakLabel=58A6FF" />
-</div>
-<div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=volcanicll&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=8" />
-</div>
-
----
-
-### 🌟 Featured Projects
-
-<div align="center">
-
-<table>
-<tr>
-<td width="50%">
-
-#### 📝 [obsidian-md-publisher](https://github.com/volcanicll/obsidian-md-publisher)
-> One-click publish Markdown to WeChat / Zhihu / Toutiao / Xiaohongshu
-
-[![Stars](https://img.shields.io/github/stars/volcanicll/obsidian-md-publisher?style=social)](https://github.com/volcanicll/obsidian-md-publisher/stargazers)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)]()
-
-</td>
-<td width="50%">
-
-#### 🔧 [kitup](https://github.com/volcanicll/kitup)
-> Cross-platform updater for AI coding assistants — keep your tools sharp
-
-[![Stars](https://img.shields.io/github/stars/volcanicll/kitup?style=social)](https://github.com/volcanicll/kitup/stargazers)
-[![Rust](https://img.shields.io/badge/Rust-DEA584?style=flat&logo=rust&logoColor=white)]()
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### 🧠 [demand-mining](https://github.com/volcanicll/demand-mining)
-> AI demand mining from social comments — extract pain points, rank & trace
-
-[![Stars](https://img.shields.io/github/stars/volcanicll/demand-mining?style=social)](https://github.com/volcanicll/demand-mining/stargazers)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)]()
-
-</td>
-<td width="50%">
-
-#### 📊 [trading-radar](https://github.com/volcanicll/trading-radar)
-> Multi-dimensional crypto scanning & monitoring platform
-
-[![Stars](https://img.shields.io/github/stars/volcanicll/trading-radar?style=social)](https://github.com/volcanicll/trading-radar/stargazers)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)]()
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### 🖥️ [dsh-desk](https://github.com/volcanicll/dsh-desk)
-> Electron shell for DeepSeek Harness (dsh) — native desktop app, original UI preserved
-
-[![Stars](https://img.shields.io/github/stars/volcanicll/dsh-desk?style=social)](https://github.com/volcanicll/dsh-desk/stargazers)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)]()
-
-</td>
-<td width="50%">
-
-#### 📈 [glm-usage-monitor](https://github.com/volcanicll/glm-usage-monitor)
-> Monitor GLM Coding Plan usage right in VS Code
-
-[![Stars](https://img.shields.io/github/stars/volcanicll/glm-usage-monitor?style=social)](https://github.com/volcanicll/glm-usage-monitor/stargazers)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)]()
-
-</td>
-<td width="50%">
-
-#### 💬 [local-group-chat](https://github.com/volcanicll/local-group-chat)
-> LAN chat app with real-time messaging & file sharing
-
-[![Stars](https://img.shields.io/github/stars/volcanicll/local-group-chat?style=social)](https://github.com/volcanicll/local-group-chat/stargazers)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)]()
-
-</td>
-</tr>
-</table>
-
-</div>
-
----
-
-### 🐍 Contribution Graph
+# volcanic
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/volcanicll/volcanicll/blob/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/volcanicll/volcanicll/blob/output/github-snake.svg" />
-  <img alt="github-snake" src="https://github.com/volcanicll/volcanicll/blob/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-contour-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/hero-contour-light.svg" />
+  <img alt="Topographic contour survey of a volcano, summit marked at 1,731 m" src="assets/hero-contour-light.svg" />
 </picture>
 
----
+Vibe coding first. Building AI-powered trading and dev tools, from crypto radar dashboards to desktop shells for coding agents.
+
+## Now
+
+Exploring agentic workflows and shipping small tools that scratch real itches.
+
+## Selected work
+
+| Site | What it does | Strata |
+|---|---|---|
+| ⌖ [obsidian-md-publisher](https://github.com/volcanicll/obsidian-md-publisher) | One-click publish Markdown to WeChat, Zhihu, Toutiao, Xiaohongshu | TypeScript |
+| ⌖ [kitup](https://github.com/volcanicll/kitup) | Cross-platform updater for AI coding assistants | Rust |
+| ⌖ [crypto-price-viewer](https://github.com/volcanicll/crypto-price-viewer) | Real-time crypto prices with multi-source market data and failover | TypeScript |
+
+## Stack
+
+**Languages** · TypeScript · JavaScript · Rust · Python · Dart
+**Builds with** · React · Next.js · Node.js · Bun · Electron · Flutter
+
+## Terrain
+
+Ground truth, straight from the commit log.
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=volcanicll&style=for-the-badge&color=58a6ff&label=PROFILE+VIEWS" />
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/plate-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/plate-light.svg" />
+  <img alt="Survey plate: repositories, stars, followers, member since" src="assets/plate-light.svg" />
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=volcanicll&hide_border=true&background=00000000&ring=f0883e&fire=f0883e&currStreakLabel=f0883e&currStreakNum=c9d1d9&sideLabels=8b949e&sideNums=8b949e&dates=8b949e" />
+  <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=volcanicll&hide_border=true&background=00000000&ring=bc4c00&fire=bc4c00&currStreakLabel=bc4c00&currStreakNum=24292f&sideLabels=57606a&sideNums=57606a&dates=57606a" />
+  <img alt="Commit streak for volcanicll" src="https://streak-stats.demolab.com/?user=volcanicll&hide_border=true&background=00000000&ring=f0883e&fire=f0883e&currStreakLabel=f0883e&currStreakNum=c9d1d9&sideLabels=8b949e&sideNums=8b949e&dates=8b949e" />
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/volcanicll/volcanicll/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/volcanicll/volcanicll/output/github-snake.svg" />
+  <img alt="Contribution snake surveying the terrain" src="https://raw.githubusercontent.com/volcanicll/volcanicll/output/github-snake-dark.svg" />
+</picture>
+
 </div>
 
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f6feb&height=100&section=footer" />
+
+*ship first, vibe always*
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/scalebar-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/scalebar-light.svg" />
+  <img alt="scale bar" src="assets/scalebar-light.svg" />
+</picture>
+
 </div>

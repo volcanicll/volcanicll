@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="104" viewBox="0 0 830 104" fill="none">
+  <style>
+    .val   { fill: #c9d1d9; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 22px; font-weight: 600; text-anchor: middle; }
+    .lbl   { fill: #8b949e; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 7.5px; letter-spacing: 2.2px; text-anchor: middle; opacity: 0.8; }
+    .div   { stroke: #8b949e; stroke-width: 0.75; opacity: 0.18; }
+    .mark  { fill: #f0883e; }
+  </style>
+  <path class="mark" d="M 18 50 L 23 59 L 13 59 Z"/>
+  <text class="val" x="113" y="60">56</text>
+  <text class="lbl" x="113" y="76">REPOSITORIES</text>
+  <text class="val" x="311" y="60">4</text>
+  <text class="lbl" x="311" y="76">STARS EARNED</text>
+  <text class="val" x="519" y="60">15</text>
+  <text class="lbl" x="519" y="76">FOLLOWERS</text>
+  <text class="val" x="726" y="60">2020</text>
+  <text class="lbl" x="726" y="76">SURVEYING SINCE</text>
+  <line class="div" x1="208" y1="42" x2="208" y2="82"/>
+  <line class="div" x1="415" y1="42" x2="415" y2="82"/>
+  <line class="div" x1="622" y1="42" x2="622" y2="82"/>
+</svg>
