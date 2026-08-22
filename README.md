@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Header -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f6feb&height=180&section=header&text=volcanic&fontSize=42&fontColor=58a6ff&fontAlignY=35&desc=Vibe%20Coding%20%F0%9F%8C%8B&descSize=18&descAlignY=55&animation=fadeIn" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=venom&color=0:1f6feb,50:a371f7,100:f778ba&height=180&section=header&text=volcanic&fontSize=48&fontColor=e6edf3&fontAlignY=32&desc=vibe%20coding%20%C2%B7%20ship%20first&descSize=18&descAlignY=52&animation=blinking" />
 
 <!-- Typing SVG -->
 <a href="https://git.io/typing-svg">
@@ -24,14 +24,14 @@
 ```typescript
 const volcanic = {
   pronouns: "he/him",
-  askMeAbout: ["web dev", "crypto", "ai", "devtools"],
+  askMeAbout: ["ai toolchains", "crypto", "devtools", "automation"],
   technologies: {
     frontEnd: { js: ["React", "Next.js"], ts: true, html: true, css: true },
-    backEnd: { node: true, python: true, bun: true },
-    misc: ["Obsidian Plugin", "VS Code Extension", "Telegram Bot"]
+    backEnd: { node: true, python: true, bun: true, rust: true },
+    misc: ["Obsidian Plugin", "VS Code Extension", "Electron", "Telegram Bot"]
   },
-  currentFocus: "AI + Crypto Toolchains",
-  funFact: "I ship first, vibe always"
+  currentFocus: "AI-powered developer & trading tools",
+  funFact: "56 repos and counting"
 };
 ```
 
@@ -41,7 +41,7 @@ const volcanic = {
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=typescript,javascript,react,nextjs,nodejs,bun,python,html,css,tailwind,solidity,bash,git,github,vscode,obsidian&perline=8&theme=dark" />
+<img src="https://skillicons.dev/icons?i=typescript,javascript,rust,python,dart,react,nextjs,nodejs,bun,electron,tailwind,flutter,bash,git,github,vscode,obsidian&perline=9&theme=dark" />
 
 </div>
 
@@ -80,34 +80,43 @@ const volcanic = {
 > Cross-platform updater for AI coding assistants — keep your tools sharp
 
 [![Stars](https://img.shields.io/github/stars/volcanicll/kitup?style=social)](https://github.com/volcanicll/kitup/stargazers)
-[![Shell](https://img.shields.io/badge/Shell-4EAA25?style=flat&logo=gnubash&logoColor=white)]()
+[![Rust](https://img.shields.io/badge/Rust-DEA584?style=flat&logo=rust&logoColor=white)]()
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-#### 📰 [crypto-daily-checkin](https://github.com/volcanicll/crypto-daily-checkin)
-> Daily crypto report with AI insights, multi-source data & auto-push
+#### 🧠 [demand-mining](https://github.com/volcanicll/demand-mining)
+> AI demand mining from social comments — extract pain points, rank & trace
 
-[![Stars](https://img.shields.io/github/stars/volcanicll/crypto-daily-checkin?style=social)](https://github.com/volcanicll/crypto-daily-checkin/stargazers)
+[![Stars](https://img.shields.io/github/stars/volcanicll/demand-mining?style=social)](https://github.com/volcanicll/demand-mining/stargazers)
 [![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)]()
 
 </td>
 <td width="50%">
 
-#### 💰 [crypto-price-viewer](https://github.com/volcanicll/crypto-price-viewer)
-> Real-time crypto price viewer with market data & supply info
+#### 📊 [trading-radar](https://github.com/volcanicll/trading-radar)
+> Multi-dimensional crypto scanning & monitoring platform
 
-[![Stars](https://img.shields.io/github/stars/volcanicll/crypto-price-viewer?style=social)](https://github.com/volcanicll/crypto-price-viewer/stargazers)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)]()
+[![Stars](https://img.shields.io/github/stars/volcanicll/trading-radar?style=social)](https://github.com/volcanicll/trading-radar/stargazers)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)]()
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-#### 🖥️ [glm-usage-monitor](https://github.com/volcanicll/glm-usage-monitor)
+#### 🖥️ [dsh-desk](https://github.com/volcanicll/dsh-desk)
+> Electron shell for DeepSeek Harness (dsh) — native desktop app, original UI preserved
+
+[![Stars](https://img.shields.io/github/stars/volcanicll/dsh-desk?style=social)](https://github.com/volcanicll/dsh-desk/stargazers)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)]()
+
+</td>
+<td width="50%">
+
+#### 📈 [glm-usage-monitor](https://github.com/volcanicll/glm-usage-monitor)
 > Monitor GLM Coding Plan usage right in VS Code
 
 [![Stars](https://img.shields.io/github/stars/volcanicll/glm-usage-monitor?style=social)](https://github.com/volcanicll/glm-usage-monitor/stargazers)
