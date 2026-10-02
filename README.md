@@ -6,10 +6,57 @@
   <img alt="Topographic contour survey of a volcano, summit marked at 1,731 m" src="assets/hero-contour-light.svg" />
 </picture>
 
-Vibe coding first. Building AI-powered trading and dev tools, from crypto radar dashboards to desktop shells for coding agents.
+Something gets in my way; I would rather build the fix than learn to live with it.
+Small tools, written fast, thrown straight into use — until the next thing gets in my way.
 
+<div align="center">
 
-## Stack
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/plate-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/plate-light.svg" />
+  <img alt="Survey plate: 382 commits in the last twelve months, 82 days with commits, 25 repositories touched, here since 2020" src="assets/plate-light.svg" />
+</picture>
 
-**Languages** · TypeScript · JavaScript · Rust · Python · Dart
-**Builds with** · React · Next.js · Node.js · Bun · Electron · Flutter
+</div>
+
+## When the commits land
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/diurnal-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/diurnal-light.svg" />
+  <img alt="Commits per hour across a day, peaking at 44 commits in the noon hour and empty between 04:00 and 08:00" src="assets/diurnal-light.svg" />
+</picture>
+
+</div>
+
+<p align="center"><sub><i>382 commits over the last twelve months, local time; the shaded hours are the night ones. 04:00–08:00 is empty because that is when I sleep, and the 22:00 spike is "<b>just one more thing</b>", which has never once been one thing.</i></sub></p>
+
+## In the workshop
+
+Not a portfolio — just what happens to be open on the desk. Each one started as something that got in my way:
+
+**[magpie](https://usemagpie.ai)** — a menu-bar switch so every coding agent can run on a different model. Born of never remembering which CLI was logged into what.
+
+**[cabledrop](https://github.com/volcanicll/cabledrop)** — files and clipboard between my Mac and whatever Android phone is on the desk, over a single USB cable. No cloud, no pairing, nothing to install on the phone.
+
+**[glm-usage-monitor](https://github.com/volcanicll/glm-usage-monitor)** — coding-plan quota in the VS Code status bar, so it does not evaporate mid-refactor.
+
+**[obsidian-md-publisher](https://github.com/volcanicll/obsidian-md-publisher)** — Markdown notes to a WeChat draft in one click. Ended a lot of copy-pasting.
+
+## Lately
+
+Reading about fully homomorphic encryption, poking at Bitcoin's scripting corners, and finding out how far a coding agent can be driven without ever touching its own UI. Most of it does not work. That is the fun part.
+
+<div align="center">
+
+*small tools, mostly for me*
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/scalebar-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/scalebar-light.svg" />
+  <img alt="scale bar" src="assets/scalebar-light.svg" />
+</picture>
+
+</div>
