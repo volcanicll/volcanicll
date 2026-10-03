@@ -88,6 +88,11 @@ def plate(t: dict, r: dict) -> str:
 def sleep_run(hours: list[int]) -> tuple[int, int] | None:
     """Longest run of empty hours after the first night band — the sleep gap.
 
+    Returns the first and last empty hour, both inclusive, so a caller can
+    render it directly. An exclusive end reads naturally in code and wrongly
+    on the page: the run 04:00–07:00 has its first *busy* hour at 08:00, and
+    printing that as the end of the gap claims the 08:00 commits do not exist.
+
     The band starting at hour 0 is shading, not sleep, so runs must start
     later; returns None when there is no interior gap to report.
     """
@@ -97,8 +102,9 @@ def sleep_run(hours: list[int]) -> tuple[int, int] | None:
         if n == 0 and start is None:
             start = h
         elif n != 0 and start is not None:
-            if start > 0 and (best is None or h - start > best[1] - best[0]):
-                best = (start, h)
+            run = (start, h - 1)
+            if start > 0 and (best is None or h - start > best[1] - best[0] + 1):
+                best = run
             start = None
     return best
 
@@ -184,8 +190,21 @@ def alt_diurnal(r: dict) -> str:
     alt = f"Commits per hour across a day, peaking at {peak} commit{'s' if peak != 1 else ''} {when}"
     gap = sleep_run(hours)
     if gap:
-        alt += f" and empty between {gap[0]:02d}:00 and {gap[1] % 24:02d}:00"
+        alt += f" and empty between {gap[0]:02d}:00 and {gap[1]:02d}:00"
     return alt
+
+
+def sleep_note(r: dict) -> str:
+    """The clause naming the sleep gap, derived rather than hand-written.
+
+    This was prose outside the generated span, so it went stale silently: it
+    still claimed 04:00–08:00 after the readings moved under it.
+    """
+    gap = sleep_run(r["hours"])
+    if not gap:
+        return "The shaded hours are the night ones."
+    return (f"The shaded hours are the night ones. {gap[0]:02d}:00–{gap[1]:02d}:00 "
+            f"is empty because that is when I sleep,")
 
 
 def caption(r: dict) -> str:
@@ -224,17 +243,19 @@ def set_alt(md: str, name: str, alt: str) -> str:
     return md[:tag.start()] + new + md[tag.end():]
 
 
-def set_span(md: str, text: str) -> str:
-    """Rewrite the one marked readings span in the README."""
-    pat = re.compile(rf"<!-- {SPAN} -->.*?<!-- /{SPAN} -->", re.DOTALL)
-    md, n = pat.subn(f"<!-- {SPAN} -->{text}<!-- /{SPAN} -->", md)
+def set_span(md: str, text: str, name: str = SPAN) -> str:
+    """Rewrite one marked span in the README."""
+    pat = re.compile(rf"<!-- {name} -->.*?<!-- /{name} -->", re.DOTALL)
+    md, n = pat.subn(f"<!-- {name} -->{text}<!-- /{name} -->", md)
     if n != 1:
-        raise SystemExit(f"gen_assets: expected exactly one <!-- {SPAN} --> span in README.md, found {n}")
+        raise SystemExit(f"gen_assets: expected exactly one <!-- {name} --> span in README.md, found {n}")
     return md
 
 
 def readme(md: str, r: dict) -> str:
-    return set_span(set_alt(set_alt(md, "plate", alt_plate(r)), "diurnal", alt_diurnal(r)), caption(r))
+    md = set_alt(set_alt(md, "plate", alt_plate(r)), "diurnal", alt_diurnal(r))
+    md = set_span(md, caption(r))
+    return set_span(md, sleep_note(r), "survey:sleep")
 
 
 def build(r: dict) -> dict[str, str]:
