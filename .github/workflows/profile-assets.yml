@@ -1,0 +1,62 @@
+# The profile's survey assets are drawn from readings.json; this workflow is
+# what keeps them true. Two jobs:
+#
+#   guard   — on every push, rebuild everything from the committed
+#             readings.json and fail if any file differs. This is the check
+#             that stops the numbers going stale again: a hand-edited asset,
+#             alt text or caption cannot outlive the next push.
+#
+#   refresh — daily (and on demand), measure the trailing twelve months from
+#             the GitHub API, rewrite readings.json, redraw, and commit — but
+#             only if a reading actually moved, because a daily commit that
+#             says "no change" is noise. measure.py owns that rule: when the
+#             readings match the file's, it leaves readings.json untouched
+#             and nothing downstream changes either.
+#
+# Like the API itself, this only sees default branches — the same constraint
+# a local measure.py run has, so the two agree.
+name: profile assets
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # 22:37 UTC is 06:37 in the readings' local time (UTC+8): surveyed before
+    # the local working day starts. Minutes are arbitrary; :00 is a crowd.
+    - cron: "37 22 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  guard:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: committed files must match what readings.json draws
+        run: python3 gen_assets.py --check
+
+  refresh:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: measure the trailing twelve months
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 measure.py
+      - name: redraw from the fresh readings
+        run: python3 gen_assets.py
+      - name: commit only what moved
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "nothing moved; no commit"
+            exit 0
+          fi
+          git config user.name "volcanicll"
+          git config user.email "1605090219@qq.com"
+          git add README.md readings.json assets
+          git commit -m "$(python3 scripts/commit_message.py)"
+          git push
