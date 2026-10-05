@@ -4,7 +4,7 @@
     .lbl { fill: #8b949e; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 7.5px; letter-spacing: 2.2px; text-anchor: middle; opacity: 0.8; }
     .div { stroke: #8b949e; stroke-width: 0.75; opacity: 0.18; }
   </style>
-  <text class="val" x="104.0" y="60">360</text>
+  <text class="val" x="104.0" y="60">361</text>
   <text class="lbl" x="104.0" y="76">COMMITS / 12 MO</text>
   <text class="val" x="311.5" y="60">77</text>
   <text class="lbl" x="311.5" y="76">ACTIVE DAYS</text>

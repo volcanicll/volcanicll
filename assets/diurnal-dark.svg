@@ -17,7 +17,7 @@
   <rect class="bar" x="110.7" y="119.0" width="17.0" height="29"/>
   <rect class="bar" x="142.3" y="143.0" width="17.0" height="5"/>
   <rect class="bar" x="300.7" y="128.0" width="17.0" height="20"/>
-  <rect class="bar" x="332.3" y="50.0" width="17.0" height="98"/>
+  <rect class="peak" x="332.3" y="48.0" width="17.0" height="100"/>
   <rect class="bar" x="364.0" y="89.0" width="17.0" height="59"/>
   <rect class="bar" x="395.7" y="114.0" width="17.0" height="34"/>
   <rect class="peak" x="427.3" y="48.0" width="17.0" height="100"/>
@@ -32,12 +32,12 @@
   <rect class="bar" x="712.3" y="126.0" width="17.0" height="22"/>
   <rect class="bar" x="744.0" y="102.0" width="17.0" height="46"/>
   <rect class="bar" x="775.7" y="92.0" width="17.0" height="56"/>
-  <text class="mark" x="435.8" y="34.0">41</text>
+  <text class="mark" x="340.8" y="34.0">41</text>
   <text class="tick" x="55.8" y="164.0">00</text>
   <text class="tick" x="150.8" y="164.0">03</text>
   <text class="tick" x="245.8" y="164.0">06</text>
-  <text class="tick" x="340.8" y="164.0">09</text>
-  <text class="tick here" x="435.8" y="164.0">12</text>
+  <text class="tick here" x="340.8" y="164.0">09</text>
+  <text class="tick" x="435.8" y="164.0">12</text>
   <text class="tick" x="530.8" y="164.0">15</text>
   <text class="tick" x="625.8" y="164.0">18</text>
   <text class="tick" x="720.8" y="164.0">21</text>

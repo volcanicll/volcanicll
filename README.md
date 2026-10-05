@@ -14,7 +14,7 @@ Small tools, written fast, thrown straight into use — until the next thing get
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/plate-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/plate-light.svg" />
-  <img alt="Survey plate: 360 commits in the last twelve months, 77 days with commits, 22 repositories touched, here since 2020" src="assets/plate-light.svg" />
+  <img alt="Survey plate: 361 commits in the last twelve months, 77 days with commits, 22 repositories touched, here since 2020" src="assets/plate-light.svg" />
 </picture>
 
 </div>
@@ -26,12 +26,12 @@ Small tools, written fast, thrown straight into use — until the next thing get
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/diurnal-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/diurnal-light.svg" />
-  <img alt="Commits per hour across a day, peaking at 41 commits in the noon hour and empty between 04:00 and 07:00" src="assets/diurnal-light.svg" />
+  <img alt="Commits per hour across a day, peaking at 41 commits at 09:00 and empty between 04:00 and 07:00" src="assets/diurnal-light.svg" />
 </picture>
 
 </div>
 
-<p align="center"><sub><i><!-- survey:readings -->360 commits over the last twelve months, local time — 50 fewer than the last survey and one in nine of them after 22:00.<!-- /survey:readings --> <!-- survey:sleep -->The shaded hours are the night ones. 04:00–07:00 is empty because that is when I sleep,<!-- /survey:sleep --> and the 22:00 spike is "<b>just one more thing</b>", which has never once been one thing.</i></sub></p>
+<p align="center"><sub><i><!-- survey:readings -->361 commits over the last twelve months, local time — 1 more than the last survey and one in nine of them after 22:00.<!-- /survey:readings --> <!-- survey:sleep -->The shaded hours are the night ones. 04:00–07:00 is empty because that is when I sleep,<!-- /survey:sleep --> and the 22:00 spike is "<b>just one more thing</b>", which has never once been one thing.</i></sub></p>
 
 ## In the workshop
 
