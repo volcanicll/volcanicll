@@ -4,11 +4,11 @@
     .lbl { fill: #57606a; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 7.5px; letter-spacing: 2.2px; text-anchor: middle; opacity: 0.8; }
     .div { stroke: #57606a; stroke-width: 0.75; opacity: 0.18; }
   </style>
-  <text class="val" x="104.0" y="60">361</text>
+  <text class="val" x="104.0" y="60">364</text>
   <text class="lbl" x="104.0" y="76">COMMITS / 12 MO</text>
-  <text class="val" x="311.5" y="60">77</text>
+  <text class="val" x="311.5" y="60">78</text>
   <text class="lbl" x="311.5" y="76">ACTIVE DAYS</text>
-  <text class="val" x="518.5" y="60">22</text>
+  <text class="val" x="518.5" y="60">23</text>
   <text class="lbl" x="518.5" y="76">REPOS TOUCHED</text>
   <text class="val" x="726.0" y="60">2020</text>
   <text class="lbl" x="726.0" y="76">HERE SINCE</text>
