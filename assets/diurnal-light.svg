@@ -12,27 +12,27 @@
   <rect class="night" x="44.3" y="92.0" width="164.3" height="56.0"/>
   <rect class="night" x="741.0" y="92.0" width="69.3" height="56.0"/>
   <line class="rule" x1="40.0" y1="148.0" x2="800.0" y2="148.0"/>
-  <rect class="bar" x="47.3" y="91.0" width="17.0" height="57"/>
-  <rect class="bar" x="79.0" y="131.0" width="17.0" height="17"/>
-  <rect class="bar" x="110.7" y="119.0" width="17.0" height="29"/>
+  <rect class="bar" x="47.3" y="92.0" width="17.0" height="56"/>
+  <rect class="bar" x="79.0" y="129.0" width="17.0" height="19"/>
+  <rect class="bar" x="110.7" y="120.0" width="17.0" height="28"/>
   <rect class="bar" x="142.3" y="143.0" width="17.0" height="5"/>
   <rect class="bar" x="300.7" y="129.0" width="17.0" height="19"/>
   <rect class="peak" x="332.3" y="48.0" width="17.0" height="100"/>
-  <rect class="bar" x="364.0" y="88.0" width="17.0" height="60"/>
+  <rect class="bar" x="364.0" y="90.0" width="17.0" height="58"/>
   <rect class="bar" x="395.7" y="115.0" width="17.0" height="33"/>
-  <rect class="bar" x="427.3" y="50.0" width="17.0" height="98"/>
-  <rect class="bar" x="459.0" y="103.0" width="17.0" height="45"/>
-  <rect class="bar" x="490.7" y="67.0" width="17.0" height="81"/>
-  <rect class="bar" x="522.3" y="108.0" width="17.0" height="40"/>
-  <rect class="bar" x="554.0" y="131.0" width="17.0" height="17"/>
-  <rect class="bar" x="585.7" y="105.0" width="17.0" height="43"/>
-  <rect class="bar" x="617.3" y="112.0" width="17.0" height="36"/>
-  <rect class="bar" x="649.0" y="122.0" width="17.0" height="26"/>
-  <rect class="bar" x="680.7" y="105.0" width="17.0" height="43"/>
-  <rect class="bar" x="712.3" y="127.0" width="17.0" height="21"/>
-  <rect class="bar" x="744.0" y="103.0" width="17.0" height="45"/>
-  <rect class="bar" x="775.7" y="93.0" width="17.0" height="55"/>
-  <text class="mark" x="340.8" y="34.0">42</text>
+  <rect class="bar" x="427.3" y="53.0" width="17.0" height="95"/>
+  <rect class="bar" x="459.0" y="104.0" width="17.0" height="44"/>
+  <rect class="bar" x="490.7" y="69.0" width="17.0" height="79"/>
+  <rect class="bar" x="522.3" y="106.0" width="17.0" height="42"/>
+  <rect class="bar" x="554.0" y="132.0" width="17.0" height="16"/>
+  <rect class="bar" x="585.7" y="106.0" width="17.0" height="42"/>
+  <rect class="bar" x="617.3" y="111.0" width="17.0" height="37"/>
+  <rect class="bar" x="649.0" y="120.0" width="17.0" height="28"/>
+  <rect class="bar" x="680.7" y="101.0" width="17.0" height="47"/>
+  <rect class="bar" x="712.3" y="113.0" width="17.0" height="35"/>
+  <rect class="bar" x="744.0" y="104.0" width="17.0" height="44"/>
+  <rect class="bar" x="775.7" y="95.0" width="17.0" height="53"/>
+  <text class="mark" x="340.8" y="34.0">43</text>
   <text class="tick" x="55.8" y="164.0">00</text>
   <text class="tick" x="150.8" y="164.0">03</text>
   <text class="tick" x="245.8" y="164.0">06</text>
