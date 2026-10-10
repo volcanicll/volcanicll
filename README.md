@@ -14,7 +14,7 @@ Small tools, written fast, thrown straight into use — until the next thing get
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/plate-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/plate-light.svg" />
-  <img alt="Survey plate: 379 commits in the last twelve months, 81 days with commits, 24 repositories touched, here since 2020" src="assets/plate-light.svg" />
+  <img alt="Survey plate: 380 commits in the last twelve months, 82 days with commits, 24 repositories touched, here since 2020" src="assets/plate-light.svg" />
 </picture>
 
 </div>
@@ -31,7 +31,7 @@ Small tools, written fast, thrown straight into use — until the next thing get
 
 </div>
 
-<p align="center"><sub><i><!-- survey:readings -->379 commits over the last twelve months, local time — 1 more than the last survey and one in nine of them after 22:00.<!-- /survey:readings --> <!-- survey:sleep -->The shaded hours are the night ones. 04:00–07:00 is empty because that is when I sleep,<!-- /survey:sleep --> and the 22:00 spike is "<b>just one more thing</b>", which has never once been one thing.</i></sub></p>
+<p align="center"><sub><i><!-- survey:readings -->380 commits over the last twelve months, local time — 1 more than the last survey and one in nine of them after 22:00.<!-- /survey:readings --> <!-- survey:sleep -->The shaded hours are the night ones. 04:00–07:00 is empty because that is when I sleep,<!-- /survey:sleep --> and the 22:00 spike is "<b>just one more thing</b>", which has never once been one thing.</i></sub></p>
 
 ## In the workshop
 
