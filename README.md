@@ -14,7 +14,7 @@ Small tools, written fast, thrown straight into use — until the next thing get
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/plate-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/plate-light.svg" />
-  <img alt="Survey plate: 306 commits in the last twelve months, 75 days with commits, 21 repositories touched, here since 2020" src="assets/plate-light.svg" />
+  <img alt="Survey plate: 311 commits in the last twelve months, 76 days with commits, 22 repositories touched, here since 2020" src="assets/plate-light.svg" />
 </picture>
 
 </div>
@@ -26,12 +26,12 @@ Small tools, written fast, thrown straight into use — until the next thing get
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/diurnal-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/diurnal-light.svg" />
-  <img alt="Commits per hour across a day, peaking at 30 commits at 09:00 and empty between 04:00 and 07:00" src="assets/diurnal-light.svg" />
+  <img alt="Commits per hour across a day, peaking at 31 commits at 09:00 and empty between 04:00 and 07:00" src="assets/diurnal-light.svg" />
 </picture>
 
 </div>
 
-<p align="center"><sub><i><!-- survey:readings -->306 commits over the last twelve months, local time — 3 more than the last survey and one in ten of them after 22:00.<!-- /survey:readings --> <!-- survey:sleep -->The shaded hours are the night ones. 04:00–07:00 is empty because that is when I sleep,<!-- /survey:sleep --> and the 22:00 spike is "<b>just one more thing</b>", which has never once been one thing.</i></sub></p>
+<p align="center"><sub><i><!-- survey:readings -->311 commits over the last twelve months, local time — 5 more than the last survey and one in nine of them after 22:00.<!-- /survey:readings --> <!-- survey:sleep -->The shaded hours are the night ones. 04:00–07:00 is empty because that is when I sleep,<!-- /survey:sleep --> and the 22:00 spike is "<b>just one more thing</b>", which has never once been one thing.</i></sub></p>
 
 ## In the workshop
 
