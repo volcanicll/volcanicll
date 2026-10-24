@@ -48,7 +48,7 @@ def shoot(html: pathlib.Path, png: pathlib.Path) -> None:
     )
 
 
-for name in sys.argv[1:] or ["plate", "diurnal"]:
+for name in sys.argv[1:] or ["diurnal"]:
     OUT.mkdir(parents=True, exist_ok=True)
     h = harness(name)
     png = OUT / f"harness-{name}.png"

@@ -4,19 +4,20 @@
 Visual language: monospace, hairline rules, letterspaced uppercase labels, a
 single rust accent. Palette per mode:
 
-              lines/labels   values      accent      paper
-  light       #57606a        #24292f     #bc4c00     #ffffff
-  dark        #8b949e        #c9d1d9     #f0883e     #0d1117
+              lines/labels   accent
+  light       #57606a        #bc4c00
+  dark        #8b949e        #f0883e
 
 readings.json — written by measure.py from the GitHub API — is the only
 input: no network, no gh, no clock. That purity is what the CI guard leans
 on: `gen_assets.py --check` rebuilds everything in memory and fails if any
 file on disk differs, so a hand-edited number cannot outlive the next push.
 
-Alongside the four SVGs, this script owns the generated fragments of
-README.md: the plate and diurnal alt attributes, and the caption's readings
-span between the <!-- survey:readings --> markers. The alt text is drawn
-from the same readings as the picture, so the two cannot drift apart again.
+Alongside the two SVGs, this script owns the generated fragments of
+README.md: the diurnal alt attribute, the one-line plate between the
+<!-- survey:plate --> markers, and the caption's readings span between the
+<!-- survey:readings --> markers. The alt text is drawn from the same
+readings as the picture, so the two cannot drift apart again.
 
 Run `./render_preview.py` for a browser preview of the README, and
 `./check_svg.py` to see an asset exactly as GitHub renders it (as <img>, with
@@ -34,19 +35,16 @@ OUT = ROOT / "assets"
 MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
 READINGS = ROOT / "readings.json"
 README = ROOT / "README.md"
-SPAN = "survey:readings"   # the README fragment this script rewrites
+SPAN = "survey:readings"        # the caption fragment this script rewrites
+PLATE = "survey:plate"          # the headline counts, as one line of text
 
 HERE_SINCE = 2020   # the one fixed fact on the plate; everything else is measured
-
-# Plate columns are centred on the true midpoints between the hairline rules
-# (0/208/415/622/830), not eyeballed, so every reading sits dead centre.
-PLATE_X = [104.0, 311.5, 518.5, 726.0]
 
 NIGHT = [(0, 4), (22, 23)]   # shaded bands: the small hours, at either end
 
 THEME = {
-    "light": {"line": "#57606a", "val": "#24292f", "acc": "#bc4c00", "paper": "#ffffff"},
-    "dark": {"line": "#8b949e", "val": "#c9d1d9", "acc": "#f0883e", "paper": "#0d1117"},
+    "light": {"line": "#57606a", "acc": "#bc4c00"},
+    "dark": {"line": "#8b949e", "acc": "#f0883e"},
 }
 
 
@@ -63,26 +61,14 @@ def wrap(body: str, css: str, w: int, h: int) -> str:
     ])
 
 
-def plate(t: dict, r: dict) -> str:
-    """Four-column instrument readout: the headline counts."""
-    cols = [
-        (str(r["total"]), "COMMITS / 12 MO"),
-        (str(r["active_days"]), "ACTIVE DAYS"),
-        (str(r["repos"]), "REPOS TOUCHED"),
-        (str(HERE_SINCE), "HERE SINCE"),
-    ]
-    body = []
-    for x, (v, lab) in zip(PLATE_X, cols):
-        body.append(f'  <text class="val" x="{x}" y="60">{v}</text>')
-        body.append(f'  <text class="lbl" x="{x}" y="76">{lab}</text>')
-    for x in PLATE_X[1:-1]:
-        body.append(f'  <line class="div" x1="{x}" y1="42" x2="{x}" y2="82"/>')
-    css = "\n".join([
-        f"    .val {{ fill: {t['val']}; font-family: {MONO}; font-size: 22px; font-weight: 600; text-anchor: middle; }}",
-        f"    .lbl {{ fill: {t['line']}; font-family: {MONO}; font-size: 7.5px; letter-spacing: 2.2px; text-anchor: middle; opacity: 0.8; }}",
-        f"    .div {{ stroke: {t['line']}; stroke-width: 0.75; opacity: 0.18; }}",
-    ])
-    return wrap("\n".join(body), css, 830, 104)
+def plate_line(r: dict) -> str:
+    """The headline counts, as one line of prose rather than a four-column SVG.
+
+    Still generated, not hand-typed: the same numbers the caption draws on,
+    so the two cannot disagree and a stale count cannot survive a push.
+    """
+    return (f"{r['total']} commits / 12 mo · {r['active_days']} active days · "
+            f"{r['repos']} repos · here since {HERE_SINCE}")
 
 
 def sleep_run(hours: list[int]) -> tuple[int, int] | None:
@@ -177,12 +163,6 @@ def diurnal(t: dict, r: dict) -> str:
 
 # --- the generated fragments of README.md ----------------------------------
 
-def alt_plate(r: dict) -> str:
-    return (f"Survey plate: {r['total']} commits in the last twelve months, "
-            f"{r['active_days']} days with commits, {r['repos']} repositories touched, "
-            f"here since {HERE_SINCE}")
-
-
 def alt_diurnal(r: dict) -> str:
     hours = r["hours"]
     peak, peak_hour = max(hours), hours.index(max(hours))
@@ -202,34 +182,35 @@ def sleep_note(r: dict) -> str:
     """
     gap = sleep_run(r["hours"])
     if not gap:
-        return "The shaded hours are the night ones."
-    return (f"The shaded hours are the night ones. {gap[0]:02d}:00–{gap[1]:02d}:00 "
-            f"is empty because that is when I sleep,")
+        return "Shaded hours are night. "
+    return f"{gap[0]:02d}:00–{gap[1]:02d}:00 is empty because that is when I sleep. "
 
 
 def caption(r: dict) -> str:
-    """The caption's opening sentence: the readings, and how they moved.
+    """The caption's sentence: how the readings moved, and the late-night share.
 
-    A delta is stated only when there is one — "0 since the last survey" is
-    not worth a sentence.
+    The total is on the plate line just above, so it is not repeated here. A
+    delta is stated only when there is one — "0 since the last survey" is not
+    worth a sentence — and the whole sentence disappears when neither half
+    has anything to say.
     """
     late = r["hours"][22] + r["hours"][23]
     prev = r.get("previous")
-    delta = ""
+    parts = []
     if prev:
         d = r["total"] - prev["total"]
         if d > 0:
-            delta = f" — {d} more than the last survey"
+            parts.append(f"{d} more than the last survey")
         elif d < 0:
-            delta = f" — {-d} fewer than the last survey"
+            parts.append(f"{-d} fewer than the last survey")
     if late:
         n = round(r["total"] / late)
         words = {2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven",
                  8: "eight", 9: "nine", 10: "ten", 11: "eleven", 12: "twelve"}
-        share = f"{' and ' if delta else '; '}one in {words.get(n, n)} of them after 22:00"
-    else:
-        share = ""
-    return f"{r['total']} commits over the last twelve months, local time{delta}{share}."
+        parts.append(f"one in {words.get(n, n)} commits after 22:00")
+    if not parts:
+        return ""
+    return ", and ".join(parts) + ", local time."
 
 
 def set_alt(md: str, name: str, alt: str) -> str:
@@ -253,7 +234,8 @@ def set_span(md: str, text: str, name: str = SPAN) -> str:
 
 
 def readme(md: str, r: dict) -> str:
-    md = set_alt(set_alt(md, "plate", alt_plate(r)), "diurnal", alt_diurnal(r))
+    md = set_alt(md, "diurnal", alt_diurnal(r))
+    md = set_span(md, plate_line(r), PLATE)
     md = set_span(md, caption(r))
     return set_span(md, sleep_note(r), "survey:sleep")
 
@@ -261,8 +243,6 @@ def readme(md: str, r: dict) -> str:
 def build(r: dict) -> dict[str, str]:
     """Everything this script owns, as path -> content."""
     return {
-        "assets/plate-light.svg": plate(THEME["light"], r),
-        "assets/plate-dark.svg": plate(THEME["dark"], r),
         "assets/diurnal-light.svg": diurnal(THEME["light"], r),
         "assets/diurnal-dark.svg": diurnal(THEME["dark"], r),
         "README.md": readme(README.read_text(), r),
@@ -293,8 +273,7 @@ def main() -> None:
         print(f"  {rel}: wrote")
 
     peak, peak_hour = max(r["hours"]), r["hours"].index(max(r["hours"]))
-    print(f"\nplate: {r['total']} COMMITS / 12 MO · {r['active_days']} ACTIVE DAYS · "
-          f"{r['repos']} REPOS TOUCHED · {HERE_SINCE} HERE SINCE")
+    print(f"\nplate: {plate_line(r)}")
     print(f"diurnal: {r['total']} commits, peak {peak} at {peak_hour:02d}:00")
 
 
