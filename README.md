@@ -32,7 +32,6 @@ Not a portfolio — just what happens to be open on the desk. Each one started a
 - **[cabledrop](https://github.com/volcanicll/cabledrop)** — files and clipboard between my Mac and whatever Android phone is on the desk, over a single USB cable. No cloud, no pairing, nothing to install on the phone.
 - **[glm-usage-monitor](https://github.com/volcanicll/glm-usage-monitor)** — coding-plan quota in the VS Code status bar, so it does not evaporate mid-refactor.
 - **[obsidian-md-publisher](https://github.com/volcanicll/obsidian-md-publisher)** — Markdown notes to a WeChat draft in one click. Ended a lot of copy-pasting.
-- **[kitup](https://github.com/volcanicll/kitup)** — one command to update every AI coding CLI on the machine. I had six of them installed and was updating none.
 
 ## Lately
 
