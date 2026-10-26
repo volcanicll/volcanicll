@@ -12,11 +12,11 @@
   <rect class="night" x="44.3" y="92.0" width="164.3" height="56.0"/>
   <rect class="night" x="741.0" y="92.0" width="69.3" height="56.0"/>
   <line class="rule" x1="40.0" y1="148.0" x2="800.0" y2="148.0"/>
-  <rect class="bar" x="47.3" y="74.0" width="17.0" height="74"/>
+  <rect class="bar" x="47.3" y="64.0" width="17.0" height="84"/>
   <rect class="bar" x="79.0" y="87.0" width="17.0" height="61"/>
   <rect class="bar" x="110.7" y="96.0" width="17.0" height="52"/>
   <rect class="bar" x="142.3" y="142.0" width="17.0" height="6"/>
-  <rect class="bar" x="300.7" y="116.0" width="17.0" height="32"/>
+  <rect class="bar" x="300.7" y="113.0" width="17.0" height="35"/>
   <rect class="bar" x="332.3" y="54.0" width="17.0" height="94"/>
   <rect class="bar" x="364.0" y="100.0" width="17.0" height="48"/>
   <rect class="bar" x="395.7" y="103.0" width="17.0" height="45"/>
@@ -25,7 +25,7 @@
   <rect class="peak" x="490.7" y="48.0" width="17.0" height="100"/>
   <rect class="bar" x="522.3" y="100.0" width="17.0" height="48"/>
   <rect class="bar" x="554.0" y="125.0" width="17.0" height="23"/>
-  <rect class="bar" x="585.7" y="100.0" width="17.0" height="48"/>
+  <rect class="bar" x="585.7" y="96.0" width="17.0" height="52"/>
   <rect class="bar" x="617.3" y="93.0" width="17.0" height="55"/>
   <rect class="bar" x="649.0" y="113.0" width="17.0" height="35"/>
   <rect class="bar" x="680.7" y="100.0" width="17.0" height="48"/>
