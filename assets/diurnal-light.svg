@@ -19,7 +19,7 @@
   <rect class="bar" x="269.0" y="144.0" width="17.0" height="4"/>
   <rect class="bar" x="300.7" y="121.0" width="17.0" height="27"/>
   <rect class="bar" x="332.3" y="66.0" width="17.0" height="82"/>
-  <rect class="bar" x="364.0" y="50.0" width="17.0" height="98"/>
+  <rect class="peak" x="364.0" y="48.0" width="17.0" height="100"/>
   <rect class="bar" x="395.7" y="101.0" width="17.0" height="47"/>
   <rect class="bar" x="427.3" y="106.0" width="17.0" height="42"/>
   <rect class="bar" x="459.0" y="126.0" width="17.0" height="22"/>
@@ -33,7 +33,7 @@
   <rect class="bar" x="712.3" y="97.0" width="17.0" height="51"/>
   <rect class="bar" x="744.0" y="106.0" width="17.0" height="42"/>
   <rect class="bar" x="775.7" y="104.0" width="17.0" height="44"/>
-  <text class="mark" x="499.2" y="34.0">45</text>
+  <text class="mark" x="372.5" y="34.0">45</text>
   <text class="tick" x="55.8" y="164.0">00</text>
   <text class="tick" x="150.8" y="164.0">03</text>
   <text class="tick" x="245.8" y="164.0">06</text>
