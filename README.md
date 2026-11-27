@@ -2,7 +2,7 @@
 
 Something gets in my way; I would rather build the fix than learn to live with it.
 
-<p align="center"><sub><!-- survey:plate -->430 commits / 12 mo · 109 active days · 41 repos · here since 2020<!-- /survey:plate --></sub></p>
+<p align="center"><sub><!-- survey:plate -->431 commits / 12 mo · 110 active days · 41 repos · here since 2020<!-- /survey:plate --></sub></p>
 
 <div align="center">
 
@@ -14,7 +14,7 @@ Something gets in my way; I would rather build the fix than learn to live with i
 
 </div>
 
-<p align="center"><sub><i><!-- survey:readings -->5 more than the last survey, and one in eleven commits after 22:00, local time.<!-- /survey:readings --> <!-- survey:sleep -->04:00–06:00 is empty because that is when I sleep. <!-- /survey:sleep -->The 22:00 spike is "<b>just one more thing</b>", which has never once been one thing.</i></sub></p>
+<p align="center"><sub><i><!-- survey:readings -->1 more than the last survey, and one in eleven commits after 22:00, local time.<!-- /survey:readings --> <!-- survey:sleep -->04:00–06:00 is empty because that is when I sleep. <!-- /survey:sleep -->The 22:00 spike is "<b>just one more thing</b>", which has never once been one thing.</i></sub></p>
 
 ## Pinned
 
